@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study/buttonTest.dart';
+import 'package:flutter_study/weatherApp.dart';
+import 'animalSound.dart';
+import 'appBarMenu.dart';
 import 'chracterCard.dart';
 import 'layout/myAppBar.dart';
+import 'loginPage.dart';
 
 void main(){
   runApp(MyApp());
@@ -42,6 +46,22 @@ class Home extends StatelessWidget{
               _TextMenu(
                 titleText: '2. Character Card Page',
                 openWidget: CharacterCard(),
+              ),
+              _TextMenu(
+                titleText: '3. Animal Sound Page',
+                openWidget: AnimalSound(),
+              ),
+              _TextMenu(
+                titleText: '4. AppBar Menu Page',
+                openWidget: AppBarMenu(),
+              ),
+              _TextMenu(
+                titleText: '5. Dice Programming',
+                openWidget: LoginPage(),
+              ),
+              _TextMenu(
+                titleText: '6. Weather App',
+                openWidget: WeatherApp(),
               ),
             ],
           ),
